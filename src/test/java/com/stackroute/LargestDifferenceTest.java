@@ -1,4 +1,4 @@
-package com.stackroute.commander.test;
+package com.stackroute;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
