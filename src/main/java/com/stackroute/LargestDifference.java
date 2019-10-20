@@ -2,7 +2,10 @@ package com.stackroute;
 
 public class LargestDifference {
 
-	public static void main(String[] args) {
+   	//Do not print anything other than what's expected/asked in problem
+    public static void main(String[] args) {
+   	//Use Scanner to get input from console
+
 
 	}
 
