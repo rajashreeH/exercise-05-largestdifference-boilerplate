@@ -32,8 +32,7 @@ Print the index of the larger number.**
 ## Example ##
     Sample Input:
     5 15 9 2 10 6                    //  largest diff. of two adjacent numbers is 10 - 2 = 8, larger number is 10, index = 3 
- 
-   Expected Output:
+    Expected Output:
     3
 --------------------------------------------------------
     Sample Input:
