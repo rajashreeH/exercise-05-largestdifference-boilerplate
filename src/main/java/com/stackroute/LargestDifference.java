@@ -6,11 +6,14 @@ import java.util.Scanner;
 
 public class LargestDifference {
 
-   	//Do not print anything other than what's expected/asked in problem
+   	private static Scanner scan;
+
+
+	//Do not print anything other than what's expected/asked in problem
     public static void main(String[] args) {
-   	//Use Scanner to get input from console
-    	Scanner scan=new Scanner(System.in);
+   	scan = new Scanner(System.in);
     	int inputNum=scan.nextInt();
+    	
     	int numbers[]=new int[inputNum];
     	for(int i=0;i<inputNum;i++) {
     		numbers[i]=scan.nextInt();
@@ -46,15 +49,18 @@ public class LargestDifference {
 				}
 				else {
 					int num;
+					int index;
 					if(numbers[i]-numbers[i+1]>0) {
 						num=numbers[i];
+						index=i;
 					}
 					else {
 						num=numbers[i+1];
+						index=i+1;
 					}
 					if(num-NumMax>0) {
 						NumMax=num;
-						indexOfMax=i;
+						indexOfMax=index;
 						
 					}
 				}
