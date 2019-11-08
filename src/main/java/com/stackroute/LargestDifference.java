@@ -27,6 +27,7 @@ public class LargestDifference {
        3,7,5,1*/
 	public static int findLargestDifference(int[] numbers) {
 		
+		if(numbers.length>1&&numbers!=null) {
     	int numberDiff[]=new int[numbers.length-1];
 		for(int i=1;i<numbers.length;i++) {
 			numberDiff[i-1]=Math.abs(numbers[i]-numbers[i-1]);
@@ -66,7 +67,11 @@ public class LargestDifference {
 				}
 			}
 		}
+		
 		return indexOfMax;
-	}
+	
+		}
+		return 0;
+		}
 
 }
